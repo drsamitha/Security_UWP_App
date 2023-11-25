@@ -56,19 +56,43 @@ void MainPage::Tool2_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEv
     // Create a new ContentDialog
     ContentDialog^ dialog = ref new ContentDialog();
 
+    // Create a new StackPanel to hold the toggle switches
+    StackPanel^ switchPanel = ref new StackPanel();
+    switchPanel->Orientation = Orientation::Vertical;
+
     // Create a new ToggleSwitch
     ToggleSwitch^ toggleSwitch = ref new ToggleSwitch();
     toggleSwitch->Header = "Toggle Switch";
     toggleSwitch->OffContent = "Off";
     toggleSwitch->OnContent = "On";
 
+    // Add the toggle switch to the switch panel
+    switchPanel->Children->Append(toggleSwitch);
+
+    // Create two more toggle switches with different headers
+    ToggleSwitch^ toggleSwitch1 = ref new ToggleSwitch();
+    toggleSwitch1->Header = "Toggle Switch 1";
+    toggleSwitch1->OffContent = "Off";
+    toggleSwitch1->OnContent = "On";
+
+    ToggleSwitch^ toggleSwitch2 = ref new ToggleSwitch();
+    toggleSwitch2->Header = "Toggle Switch 2";
+    toggleSwitch2->OffContent = "Off";
+    toggleSwitch2->OnContent = "On";
+
+    // Add the toggle switches to the switch panel
+    switchPanel->Children->Append(toggleSwitch1);
+    switchPanel->Children->Append(toggleSwitch2);
+
     // Set the properties of the dialog
     dialog->Title = "Tool 2";
-    dialog->Content = toggleSwitch; // Set the content to the ToggleSwitch
+    dialog->Content = switchPanel; // Set the content to the switch panel
     dialog->CloseButtonText = "OK";
+
     // Show the dialog
     dialog->ShowAsync();
 }
+
 
 
 

@@ -55,7 +55,7 @@
             <PivotItem Header="About">
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Symbol="Important" />
-                    <TextBlock Text="This is About" Margin="10,0,0,0" />
+                    <TextBlock Text="This is About " Margin="10,0,0,0" />
                 </StackPanel>
             </PivotItem>
         </Pivot>
