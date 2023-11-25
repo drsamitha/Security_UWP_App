@@ -218,6 +218,11 @@
   <ItemGroup>
     <Xml Include="XMLFile.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\ip_list_1.txt" />
+    <Text Include="..\ip_list_2.txt" />
+    <Text Include="..\ip_list_3.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

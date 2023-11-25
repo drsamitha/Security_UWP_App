@@ -27,6 +27,7 @@
                         <SymbolIcon Symbol="Edit" />
                         <TextBlock Text="Tool 2" Margin="10,0,0,0" />
                         <Button Content="Use Tool 2" Margin="10,0,0,0" Click="Tool2_Click" />
+                        
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Edit" />
